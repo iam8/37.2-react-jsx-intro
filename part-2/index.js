@@ -7,9 +7,14 @@
 
 
 const Tweet = (props) => {
+
+    const {color, backgroundColor} = props;
     const {username, name, date, message} = props;
+
+    const colors = {color, backgroundColor};
+
     return (
-        <div>
+        <div style={colors}>
             <h2>Tweet Info</h2>
             <ul>
                 <li>Created by (username): {username}</li>
@@ -26,28 +31,32 @@ const App = () => {
     return (
         <div>
             <Tweet
-                className=""
+                color="darkblue"
+                backgroundColor="lightblue"
                 username="A000"
                 name="Alice"
                 date="7-10-23"
                 message="Hello world" />
 
             <Tweet
-                className=""
+                color="darkgreen"
+                backgroundColor="lightgreen"
                 username="B111"
                 name="Bob"
                 date="6-19-23"
                 message="Happy Birthday to me!" />
 
             <Tweet
-                className=""
+                color="maroon"
+                backgroundColor="pink"
                 username="C222"
                 name="Charlie"
                 date="5-5-23"
                 message="Cinco de Mayo" />
 
             <Tweet
-                className=""
+                color="brown"
+                backgroundColor="yellow"
                 username="D333"
                 name="Daisy"
                 date="4-01-23"
