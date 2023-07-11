@@ -12,7 +12,7 @@ const Person = (props) => {
 
     return (
         <div>
-            <h3>{name.slice(0, 8)}, age {age}</h3>
+            <h3>{name.slice(0, 6)}, age {age}</h3>
             <p>Learn some information about this person.</p>
 
             <h3>Hobbies:</h3>
