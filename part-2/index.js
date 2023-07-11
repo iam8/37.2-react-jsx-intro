@@ -25,10 +25,33 @@ const Tweet = (props) => {
 const App = () => {
     return (
         <div>
-            <Tweet username="A000" name="Alice" date="7-10-23" message="Hello world" />
-            <Tweet username="B111" name="Bob" date="6-19-23" message="Happy Birthday to me!" />
-            <Tweet username="C222" name="Charlie" date="5-5-23" message="Cinco de Mayo" />
-            <Tweet username="D333" name="Daisy" date="4-01-23" message="April Fool's!" />
+            <Tweet
+                className=""
+                username="A000"
+                name="Alice"
+                date="7-10-23"
+                message="Hello world" />
+
+            <Tweet
+                className=""
+                username="B111"
+                name="Bob"
+                date="6-19-23"
+                message="Happy Birthday to me!" />
+
+            <Tweet
+                className=""
+                username="C222"
+                name="Charlie"
+                date="5-5-23"
+                message="Cinco de Mayo" />
+
+            <Tweet
+                className=""
+                username="D333"
+                name="Daisy"
+                date="4-01-23"
+                message="April Fool's!" />
         </div>
     );
 }
