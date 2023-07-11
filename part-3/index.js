@@ -12,12 +12,14 @@ const Person = (props) => {
 
     return (
         <div>
-            <p>Learn some information about this person.</p>
             <h3>{name.slice(0, 8)}, age {age}</h3>
+            <p>Learn some information about this person.</p>
+
             <h3>Hobbies:</h3>
             <ul>
                 {hobbies.map(hobby => <li key={hobby.id}>{hobby.text}</li>)}
             </ul>
+
             <h3>{age >= 18 ? "Please go vote!" : "You must be at least 18 to vote."}</h3>
         </div>
     )
